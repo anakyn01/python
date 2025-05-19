@@ -1,15 +1,15 @@
 class MyNumbers:
-    def __iter__(self):
+ def __iter__(self):
         self.a = 1 #숫자1인데
         return self
-    def __next__(self):
+ def __next__(self):
 #반복을 중지하고 싶을때 가정법을 사용한다
-     if self.a <= 20:
+  if self.a <= 20:
         x = self.a
         self.a += 1
         return x
-     else:
-         raise StopIteration
+  else:
+        raise StopIteration
     #지정이 안되어 있어서
 
 myChild = MyNumbers()
